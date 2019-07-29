@@ -26,9 +26,10 @@ Go to the account page
 Generate the API key
 
 # Usage example  
+```node
 var engage = require('fanisko-engage-api');  
 
-```node
+
 // Getting Content   
 router.post('/get_content',  async  function(req, res, next) {  
   var content =  await engage.get_content(req.body["api_key"], req.body["secret_key"])  
