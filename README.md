@@ -29,13 +29,18 @@ Go to the account page
 Generate the API key
 
 # Usage example  
-var engage = require('fanisko-engage-api-test-prabhat');  
+var engage = require('fanisko-engage-api');  
 
+  
+// Getting Content   
 router.post('/get_content',  async  function(req, res, next) {  
   var content =  await engage.get_content(req.body["api_key"], req.body["secret_key"])  
   res.status(200).json({ "result": content })  
 });  
-
+  
+    
+  
+//Getting Content with id  
 router.post('/get_content_by_id', async function(req, res, next) {  
   var content = await engage.get_content_by_id(req.body["api_key"], req.body["secret_key"])  
   res.status(200).json({ "result": content })  
@@ -43,4 +48,4 @@ router.post('/get_content_by_id', async function(req, res, next) {
 
 
 # Fork the repo on GitHub
-Clone the project to your own machine  
+Clone the project to your own machine.  
