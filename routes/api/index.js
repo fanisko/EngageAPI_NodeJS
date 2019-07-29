@@ -5,7 +5,6 @@ var engage = require('fanisko-engage-api-test-prabhat')
 
 router.post('/get_content',  async  function(req, res, next) {
   var content =  await engage.get_content(req.body["api_key"], req.body["secret_key"])
-
   res.status(200).json({ "result": content })
 });
 

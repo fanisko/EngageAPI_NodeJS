@@ -7,7 +7,8 @@
 
 This is a Node.js module available through the npm registry.
 Before installing, download and install Node.js. Node.js.
-Installation is done using the npm install command:  
+Installation is done using the npm install command:    
+
 `$ npm install Fansiko_Engage_Api`
 
 
@@ -27,7 +28,18 @@ Go to the account page
 
 Generate the API key
 
-# Usage example
+# Usage example  
+var engage = require('fanisko-engage-api-test-prabhat');  
+
+router.post('/get_content',  async  function(req, res, next) {
+  var content =  await engage.get_content(req.body["api_key"], req.body["secret_key"])
+  res.status(200).json({ "result": content })
+});
+
+router.post('/get_content_by_id', async function(req, res, next) {
+  var content = await engage.get_content_by_id(req.body["api_key"], req.body["secret_key"])
+  res.status(200).json({ "result": content })
+});
 
 
 # Fork the repo on GitHub
