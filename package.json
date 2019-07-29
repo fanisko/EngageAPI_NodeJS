@@ -16,7 +16,7 @@
     "express": "~4.16.1",
     "express-session": "^1.16.2",
     "express-validator": "^6.1.1",
-    "fanisko-engage-api-test-prabhat": "^1.0.0",
+    "fanisko-engage-api": "^1.0.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
