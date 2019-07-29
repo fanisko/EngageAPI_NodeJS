@@ -1,8 +1,5 @@
 ![alt text](logo.jpg)
 
-
-# fansiko-engage-api
-
 # Installation
 
 This is a Node.js module available through the npm registry.
@@ -12,7 +9,7 @@ Installation is done using the npm install command:
 `$ npm install fansiko-engage-api`
 
 
-# What you can do
+# What can you do
 get content   
 get content with id  
   
