@@ -26,7 +26,7 @@ router.post('/get_content_by_id', async function(req, res, next) {
  * Getting Content by Pageno
  */
 router.post('/get_content_by_page', async function(req, res, next) {
-  var content = await engage.get_content_by_id(API_KEY, SECRET_KEY,pageno)
+  var content = await engage.get_content_by_id(API_KEY, SECRET_KEY,req.body.pageno)
   res.status(200).json({ "result": content })
 });
 
